@@ -47,7 +47,7 @@
 	<link rel='stylesheet' id='divi-style-css'  href='https://atri.usc.edu/wp-content/themes/divi-child/style.css?ver=4.16.0' type='text/css' media='all' />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>People - GU Tech and Society</title>
+<title>Disease Burden:  Alzheimer's Disease Prevalence</title>
         <style type="text/css">
         </style>
         
@@ -881,14 +881,16 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 			
 			
 			<style>
-				
+				.datanav, .leftnav ul a  { 
+				width:120%!important;
+				}
 				.datacol {
 					float: left!important;
 					padding-left: 20px!important;
 				}
 		.datacol .leftnav {
 /*  float: left;*/
-  width: 10%;
+  width: 150%;
 float: left!important;
   background: #ccc;
 /*  padding: 20px;*/
@@ -901,14 +903,15 @@ float: left!important;
 	
 }
 	.column .middle {
-  width: 1%;
+  width: 200px!important;
 }
 
 .datacol.chart {
 
 /*  padding-left: 10%;*/
 
-  width: 80%;
+  width: 70%;
+	float:right;
 /*  background-color: #f1f1f1;*/
 
 }
@@ -917,18 +920,33 @@ float: left!important;
   display: table;
   clear: both;
 }
+				
+				.datacol.chart {
+					margin-left:2%;
+				}
 
 		@media (max-width: 600px) {
-  #leftnav, #chart {
+  .leftnav, .chart {
     width: 100%;
+	  margin-left:0%;
     height: auto;
   }
+			
+}
+				
+				@media (max-width: 1100px) {
+  .datacol.chart{
+    width: 60%;
+	 margin-left:0%;
+    height: auto;
+  }
+			
 }
 				
 						#myTable {
 /*			display: inline-block;*/
 			overflow-x:scroll!important;
-			width:80%!important;
+			width:120%!important;
 			overflow-y:hidden!important;
 /*							height:100%;*/
 /*							border-left: 0.5px solid rgb(51,51,51,0.3);*/
@@ -942,13 +960,13 @@ float: left!important;
 			
 /*			overflow-x:scroll!important;*/
 /*			min-width:100px!important;*/
-			min-width:60px!important;
+			min-width:110px!important;
 			
 		}
 
 				#tablediv {
 					position: relative;
-					min-width:220%!important;
+					min-width:100%!important;
 					
 					
 				}
@@ -1013,7 +1031,7 @@ float: left!important;
 					margin-top:3%;
 					color:white;
 					padding:4%;
-					width:250px;
+					width:150px;
 					
 				}
 				
@@ -1219,35 +1237,35 @@ tbody th:hover::after {
 <div class="ss-subsection"
 
    data-index="0"
-style="margin-left:0%!important;margin-right-0%!important;">
+style="margin-left:-4%!important;margin-right-10%!important;padding-right:0%!important;padding-left:0%!important;">
 	
 	
 
-  <div class="et_pb_row et_pb_row_2" style="margin-left:-4%!important;padding:0%!important">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child" style="margin:0%!important;padding:0%!important">
+  <div class="et_pb_row et_pb_row_2" style="margin-left:-4%!important;padding:0%!important;margin-right:-10%!important">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child" style="margin:0%!important;padding:0%!important;margin-right:-15%!important">
 				
 				
 				
-				<div class="et_pb_module et_pb_code et_pb_code_0">
+				<div class="et_pb_module et_pb_code et_pb_code_0" style="margin-left:-12%!important;padding:0%!important;margin-right:-30%!important">
 				
 				
-				<section style="margin-left:0%">
+				<section style="">
   <div class="datacol leftnav" style="margin-right:0%;background-color:white!important;">
     <ul>
-<a href="/data-pop-total.html"><li class="datanav currentnav">Population</li></a>
-      <a href="/data-db-mcprev.html"><li  class="datanav">Disease Burden</li></a>
+      <a href="/data-pop-total.html"><li class="datanav">Population</li></a>
+      <a href="/data-db-mcprev.html"><li  class="datanav currentnav">Disease Burden</li></a>
       <a href="/data-hp-nurses.html"><li class="datanav">Healthcare Personnel</li></a>
 	  <a href="/data-ie-mriscans.html"><li class="datanav">Imaging Equipment</li></a>
     </ul>
   </div>
 					
  <div class="datacol middle">
-	 <h2></h2>
+	 <p style=Color:white>    &nbsp;&nbsp;&nbsp;   </p>
 </div>
   
-  <div class="datacol chart" style="margin-top:-3.6%">
+  <div class="datacol chart" style="margin-top:-3.6%;">
 	  
-	  <h2 style="display: inline-block">Population: <h3 style="display: inline-block"> &nbsp 65+ Population</h3></h2>
+	  <h2 style="display: inline-block">Disease Burden: <h3 style="display: inline-block"> &nbsp; Alzheimer's Disease Prevalence</h3></h2>
 	  
 	  <div style="margin-left:0%;padding-right:0%!important;margin-right:0%!important; overflow-x:scroll!important;overflow-y:hidden!important;" id="chart">
 	  
@@ -1337,7 +1355,42 @@ style="margin-left:0%!important;margin-right-0%!important;">
     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
 -->
 
-		  <style>
+	  <div id="tablediv" style="overflow-x:scroll!important;overflow-y:hidden!important;;margin-right:0%!important">
+<table id="myTable" style="overflow-x:scroll!important;overflow-y:hidden!important;padding-right:0%!important;margin-right:0%!important">
+	<thead style="">
+		
+		<tr>
+			
+			
+			<th colspan="1" class="dwnldcol" >
+			<a href="/datasets/db/diseaseburden.xlsx" download="population" >
+	  
+		  <img src=
+"https://stats.oecd.org/Content/themes/OECD/images/export_excel.png"
+            width="50" alt="" style="width:	10%;margin-top:-0.5%">
+		 Export Excel
+	  </a>
+			</th>
+			
+			<th colspan="1" class="dwnldcol" align="left" style="padding-left:0.6%!important;">
+				 <a href="/datasets/db/diseaseburden.csv" download="population">
+	 
+		  <img src=
+"https://stats.oecd.org/Content/themes/OECD/images/export_txt.png"
+            width="50" alt="" style="width:10%;margin-top:-0.5%">
+		  Export CSV
+	  </a>
+			</th>
+			
+			<th colspan="23" class="dwnldcol">
+				
+			</th>
+		
+		</tr>
+		
+		
+		
+		<style>
 .dropbtn {
   background-color: #04AA6D;
 /*  color: white;*/
@@ -1405,64 +1458,37 @@ style="margin-left:0%!important;margin-right-0%!important;">
 
 			}
 </style>
-		  
-		  
-	  <div id="tablediv" style="overflow-x:scroll!important;overflow-y:hidden!important;;margin-right:0%!important">
-<table id="myTable" style="overflow-x:scroll!important;overflow-y:hidden!important;padding-right:0%!important;margin-right:0%!important">
-	<thead style="">
 		
-		<tr>
-			
-			
-			<th colspan="1" class="dwnldcol" >
-			<a href="/population/popexcel.xlsx" download="population" >
-	  
-		  <img src=
-"https://stats.oecd.org/Content/themes/OECD/images/export_excel.png"
-            width="50" alt="" style="width:	10%;margin-top:-0.5%">
-		 Export Excel
-	  </a>
-			</th>
-			
-			<th colspan="1" class="dwnldcol" align="left" style="padding-left:0.6%!important;">
-				 <a href="datasets/population/popcsv.csv" download="population">
-	 
-		  <img src=
-"https://stats.oecd.org/Content/themes/OECD/images/export_txt.png"
-            width="50" alt="" style="width:10%;margin-top:-0.5%">
-		  Export CSV
-	  </a>
-			</th>
-			
-			<th colspan="23" class="dwnldcol">
-				
-			</th>
-		
-		</tr>
 		
 		<tr>
 			<th colspan="1" class="PDimName variablecol">Variable</th>
 			
 <!--
 			<th colspan="24" class="PDim variablecol" align="left" style="">
-				<select class="PDim variablecol" name="PDim_UNIT" id="PDim_UNIT" onchange="changeFunc(value);"style="margin-left:0.2%!important">
-					<option value="total" >Total Population</option>
-					<option value="50">65+ Population</option>
-					<option value="65">50+ Population</option>
+				<select class="PDim variablecol" name="PDim_UNIT" id="PDim_UNIT" onchange="changeFunc(value);" style="margin-left:0.2%!important">
+					<option value="50">50+ Population</option>
+					<option selected="" value="total">Total Population</option>
+					<option value="65B">65+ Population</option>
 				</select>
 			</th>
 -->
+			
 		<th colspan="23" class="PDimName variablecol" style="margin-right:-20%!important;padding-right:-20%!important;align-content: flex-start!important;">
 			<div class="dropdown">
-				<p class="btntext">65+ Population &or;</p>
+				<p class="btntext">Alzheimer's Disease Prevalence &or;</p>
   <button class="dropbtn"></button>
   <div class="dropdown-content">
-    <a href="/data-pop-total.html">Total Population</a>
-    <a href="/data-pop-fifty.html">50+ Population</a>
-    <a href="/data-pop-sixfive.html">65+ Population</a>
+    <a href="/data-pop-total.html">MCI Prevalence</a>
+    <a href="/data-pop-fifty.html">Alzheimer's Disease Prevalence</a>
+    <a href="/data-pop-sixfive.html">MS Prevalence</a>
+	 <a href="/data-pop-sixfive.html">MS Incidence</a>
   </div>
 </div>
 			</th>
+			
+<!--			<th colspan="" class="PDimName variablecol"></th>-->
+		
+		
 		
 		
 		</tr>
@@ -1471,7 +1497,7 @@ style="margin-left:0%!important;margin-right-0%!important;">
 			
 			<th colspan="1" class="PDimName measurecol">Measure</th>
 			
-			<th colspan="25" class="PDim measurecol" align="left" style="padding-left:0.5%!important">Persons</th>
+			<th colspan="25" class="PDim measurecol" align="left" style="padding-left:0.5%!important">Millions</th>
 		
 		</tr>
 		
@@ -1565,22 +1591,6 @@ style="margin-left:0%!important;margin-right-0%!important;">
 	<thead>
 		<tr class="row100 head">
 			<th class="cell100" >Country</th>
-			<th class="cell100" style="">2000</th>
-			<th class="cell100" style="">2001</th>
-			<th class="cell100" style="">2002</th>
-			<th class="cell100" style="">2003</th>
-			<th class="cell100" style="">2004</th>
-			<th class="cell100" style="">2005</th>
-			<th class="cell100" style="">2006</th>
-			<th class="cell100" style="">2007</th>
-			<th class="cell100" style="">2008</th>
-			<th class="cell100" style="">2009</th>
-			<th class="cell100" style="">2010</th>
-			<th class="cell100" style="">2011</th>
-			<th class="cell100" style="">2012</th>
-			<th class="cell100" style="">2013</th>
-			<th class="cell100" style="">2014</th>
-			<th class="cell100" style="">2015</th>
 			<th class="cell100" style="">2016</th>
 			<th class="cell100" style="">2017</th>
 			<th class="cell100" style="">2018</th>
@@ -1649,303 +1659,120 @@ style="margin-left:0%!important;margin-right-0%!important;">
 -->
   <tr class="pubs even" style="margin-top:900px!important;">
     <td class="countryalign" style="margin-top:900px!important;">Australia</td>
-<td> 2,364,260 </td>
-<td> 2,419,070 </td>
-<td> 2,465,669 </td>
-<td> 2,511,327 </td>
-<td> 2,558,857 </td>
-<td> 2,611,879 </td>
-<td> 2,664,064 </td>
-<td> 2,736,610 </td>
-<td> 2,805,167 </td>
-<td> 2,890,566 </td>
-<td> 2,986,675 </td>
-<td> 3,087,911 </td>
-<td> 3,213,853 </td>
-<td> 3,330,378 </td>
-<td> 3,442,148 </td>
-<td> 3,554,304 </td>
-<td> 3,672,251 </td>
-<td> 3,787,660 </td>
-<td> 3,906,925 </td>
-<td> 4,031,367 </td>
-<td> 4,185,311 </td>
-<td> 4,313,779 </td>
+<td></td>
+<td></td>
+<td>0.269</td>
+<td></td>
+<td></td>
+    <td></td>
+
   </tr>
   <tr class = "pubs odd">
     <td class="countryalign">Brazil</td>
-    <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 14,271,184 </td>
-<td> 14,761,255 </td>
-<td> 15,294,976 </td>
-<td> 15,868,048 </td>
-<td> 16,474,896 </td>
-<td> 17,112,122 </td>
-<td> 17,782,556 </td>
-<td> 18,487,830 </td>
-<td> 19,227,832 </td>
-<td> 20,003,165 </td>
-<td> 20,813,349 </td>
-<td> 21,658,060 </td>
+    
   </tr>
   <tr class="pubs">
     <td class="countryalign">Canada</td>
+<td>0.376</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
     <td></td>
-<td> 3,921,849 </td>
-<td> 3,989,384 </td>
-<td> 4,060,711 </td>
-<td> 4,136,349 </td>
-<td> 4,213,993 </td>
-<td> 4,318,906 </td>
-<td> 4,421,379 </td>
-<td> 4,541,116 </td>
-<td> 4,669,325 </td>
-<td> 4,804,015 </td>
-<td> 4,955,235 </td>
-<td> 5,154,937 </td>
-<td> 5,352,983 </td>
-<td> 5,542,326 </td>
-<td> 5,722,237 </td>
-<td> 5,920,968 </td>
-<td> 6,135,012 </td>
-<td> 6,355,552 </td>
-<td> 6,600,010 </td>
-<td> 6,845,502 </td>
-<td> 7,081,792 </td>
+ 
   </tr>
   <tr class="pubs">
     <td class="countryalign">France</td>
 <td></td>
+<td>0.923</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 13,461,842 </td>
-<td> 13,750,578 </td>
-<td> 13,994,633 </td>
-<td> 14,250,597 </td>
+    <td></td>
+
   </tr>
   <tr class="pubs">
     <td class="countryalign">Germany</td>
-<td> 13,694,014 </td>
-<td> 14,065,722 </td>
-<td> 14,438,819 </td>
-<td> 14,859,995 </td>
-<td> 15,367,451 </td>
-<td> 15,870,074 </td>
-<td> 16,299,289 </td>
-<td> 16,518,744 </td>
-<td> 16,729,013 </td>
-<td> 16,901,742 </td>
-<td> 16,844,293 </td>
-<td> 16,603,432 </td>
-<td> 16,715,155 </td>
-<td> 16,852,810 </td>
-<td> 17,088,711 </td>
-<td> 17,300,178 </td>
-<td> 17,509,705 </td>
-<td> 17,709,711 </td>
-<td> 17,883,532 </td>
-<td> 18,090,682 </td>
-<td> 18,271,636 </td>
-<td> 18,436,499 </td>
+<td></td>
+<td>1.17</td>
+<td></td>
+<td></td>
+<td></td>
+    <td></td>
+
   </tr>
  <tr class="pubs">
     <td class="countryalign">Italy</td>
 <td></td>
+<td>0.957</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 13,693,215 </td>
-<td> 13,859,090 </td>
-<td> 13,941,531 </td>
+	  <td></td>
   </tr>
  <tr class="pubs">
     <td class="countryalign">Japan</td>
-<td> 22,041,000 </td>
-<td> 22,869,000 </td>
-<td> 23,628,000 </td>
-<td> 24,311,000 </td>
-<td> 24,876,000 </td>
-<td> 25,761,000 </td>
-<td> 26,604,000 </td>
-<td> 27,464,000 </td>
-<td> 28,216,000 </td>
-<td> 29,005,000 </td>
-<td> 29,484,000 </td>
-<td> 29,752,000 </td>
-<td> 30,793,000 </td>
-<td> 31,898,000 </td>
-<td> 33,000,000 </td>
-<td> 33,868,000 </td>
 <td></td>
 <td></td>
+<td>3.027</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
+	  <td></td>
   </tr>
  <tr class="pubs">
     <td class="countryalign"> South Korea</td>
 <td></td>
 <td></td>
+<td>0.981</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 5,700,972 </td>
-<td> 5,980,060 </td>
-<td> 6,250,986 </td>
-<td> 6,520,607 </td>
-<td> 6,775,101 </td>
-<td> 6,995,652 </td>
-<td> 7,356,106 </td>
-<td> 7,650,408 </td>
-<td> 8,026,915 </td>
-<td> 8,496,077 </td>
-<td> 8,851,033 </td>
+    <td></td>
+
   </tr>
   <tr class="pubs">
     <td class="countryalign">Spain</td>
-<td> 6,749,832 </td>
-<td> 6,898,557 </td>
-<td> 7,026,593 </td>
-<td> 7,119,244 </td>
-<td> 7,154,260 </td>
-<td> 7,230,328 </td>
-<td> 7,362,321 </td>
-<td> 7,451,435 </td>
-<td> 7,577,395 </td>
-<td> 7,727,114 </td>
-<td> 7,892,790 </td>
-<td> 8,052,204 </td>
-<td> 8,179,883 </td>
-<td> 8,345,531 </td>
-<td> 8,510,477 </td>
-<td> 8,630,798 </td>
-<td> 8,752,637 </td>
-<td> 8,878,945 </td>
-<td> 9,015,648 </td>
-<td> 9,177,221 </td>
-<td> 90,301,400 </td>
-<td> 9,442,816 </td>
+<td></td>
+<td>0.631</td>
+<td></td>
+<td></td>
+<td></td>
+    <td></td>
+
   </tr>
   <tr class="pubs">
     <td class="countryalign">Sweden</td>
-<td> 1,530,887 </td>
-<td> 1,532,064 </td>
-<td> 1,533,795 </td>
-<td> 1,541,254 </td>
-<td> 1,554,335 </td>
-<td> 1,565,377 </td>
-<td> 1,581,437 </td>
-<td> 1,608,413 </td>
-<td> 1,645,081 </td>
-<td> 1,690,777 </td>
-<td> 1,737,246 </td>
-<td> 1,784,668 </td>
-<td> 1,828,283 </td>
-<td> 1,872,207 </td>
-<td> 1,912,884 </td>
-<td> 1,947,227 </td>
-<td> 1,976,857 </td>
-<td> 2,006,146 </td>
-<td> 2,035,711 </td>
-<td> 2,065,367 </td>
-<td> 2,088,086 </td>
-<td> 2,118,766 </td>
+<td></td>
+<td>0.095</td>
+<td></td>
+<td></td>
+<td></td>
+    <td></td>
+
   </tr>
   <tr class="pubs">
     <td class="countryalign">Taiwan</td>
-<td> 1,886,648 </td>
 <td></td>
 <td></td>
+<td>0.45</td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+    <td></td>
+
   </tr>
  <tr class="pubs">
     <td class="countryalign">United Kingdom</td>
 <td></td>
+<td>0.698</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 12,165,557 </td>
-<td> 12,374,023 </td>
-<td> 12,540,886 </td>
-<td> 12,724,882 </td>
+	  <td></td>
   </tr>
  <tr class="pubs">
     <td class="countryalign">United States</td>
@@ -1953,24 +1780,8 @@ style="margin-left:0%!important;margin-right-0%!important;">
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td> 40,478,224 </td>
-<td> 41,350,015 </td>
-<td> 43,130,363 </td>
-<td> 44,629,455 </td>
-<td> 46,157,016 </td>
-<td> 47,650,770 </td>
-<td> 49,202,071 </td>
-<td> 50,753,404 </td>
-<td> 52,369,339 </td>
-<td> 54,058,263 </td>
-<td></td>
-<td></td>
+<td>6.07</td>
+	  <td></td>
   </tr>
   
 </tbody></table>
@@ -2433,6 +2244,7 @@ var wpv_pagination_local = {"front_ajaxurl":"https:\/\/techandsociety.georgetown
 <script type='text/javascript' src='https://techandsociety.georgetown.edu/wp-content/uploads/bb-plugin/cache/3162-layout-partial.js?ver=c757c27d5fb7a1813318c658d7a85916'></script>
 
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2695fa1965","applicationID":"153367666","transactionName":"ZlxSbRRSWkMEAkZYDV8WcVoSWlteShFTVgc=","queueTime":0,"applicationTime":735,"atts":"ShtRG1xISU0=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
 
 <script>
 	
